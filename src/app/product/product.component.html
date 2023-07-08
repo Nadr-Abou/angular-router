@@ -1,0 +1,9 @@
+<div >
+  <h2>{{ prodotto?.id }}</h2>
+  <h1>{{ prodotto?.title }}</h1>
+  <p>{{ prodotto?.description }}</p>
+  <img [src]="prodotto?.thumbnail" alt="immagine prodotto" />
+  <a [routerLink] ="['/products/', prodotto?.id]" >Go to</a> <!-- Metodo 1 per navigare -->
+  <button (click)="vaiAProdotto()">Dettaglio</button>
+</div>
+
